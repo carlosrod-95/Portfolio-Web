@@ -63,12 +63,14 @@ html, body {
 
         &_es{
             padding-right: 40px;
+            flex: 1;
 
         }
 
         &_eng{
             border-left: 1px solid;
             padding-left: 40px;
+            flex: 1;
         }
     }
 
@@ -80,11 +82,13 @@ html, body {
 
         &_es{
             padding-right: 40px;
+            flex: 1;
         }
 
         &_eng{
             border-left: 1px solid;
             padding-left: 40px;
+            flex: 1;
         }
     }
 }

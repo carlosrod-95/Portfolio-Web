@@ -5,30 +5,30 @@ export const InicioWeb = () => {
         <div className="container">
 
             <div className="inicio-top">
-                <img className="inicio-top_img" src="images/computer.png"></img>
+                <img className="inicio-top_img" src="images/computer.png" alt="logo"></img>
                 <h1 className="inicio-top_titulo">Carlos Rodríguez Pérez</h1>
                 <h3 className="inicio-top_subtitulo">Frontend Developer</h3>
                 <button className="inicio-top_button btn btn-outline">
-                    <a className="inicio-top_button_link" href="images/cv.pdf">Ver CV</a>
+                    <a className="inicio-top_button_link" href="images/CV_Carlos_Rodriguez.pdf" download>Descargar CV</a>
                 </button>
             </div>
 
             <div className="inicio-middle">
                 <div className="inicio-middle_about">
                     <div className="inicio-middle_about_es">
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                        <p>Soy Carlos Rodríguez Pérez, de Madrid, un estudiante de programación y desarrollo web. Empecé a interesarme por este sector a principios del año 2020, cuando decidí hacer unos cursos para adquirir una base teórica y práctica. Al acabar estos cursos decidí ampliar mis conocimientos e intentar, de forma definitiva, dedicarme al desarrollo web. Siempre me he visto muy interesado por el diseño y la sensación que te proporciona el empezar a construir algo desde cero y ver el resultado final como lo había imaginado en mi cabeza, y considero que el desarrollo web y la programación me proporciona todo eso que me fascina.</p>
                     </div>
                     <div className="inicio-middle_about_eng">
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                        <p>I'm Carlos Rodríguez Pérez, from Madrid, a student of programming and web development. I started to get interested in this sector at the beginning of the year 2020, when I decided to do some courses to acquire a theoretical and practical basis. At the end of these courses I decided to expand my knowledge and try, definitively, to dedicate myself to web development. I have always been very interested in design and the feeling it gives you to start building something from scratch and see the final result as I had imagined it in my head, and I consider that web development and programming gives me all that fascinates me.</p>
                     </div>
                 </div>
 
                 <div className="inicio-middle_conocimientos">
                 <div className="inicio-middle_conocimientos_es">
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                        <p>Durante este año he ido adquiriendo conocimiento de varias tecnologías, tanto de maquetación como de programación frontend. Empecé con HTML5 y CSS3 para más adelante complementarlo con Bootsrap y SASS. A continuación comenzé a aprender más sobre Javascript (ES6) y algunos frameworks como Angular 10+ y React. También poseo experiencia en desarrollos de web responsive, así como en Firebase y Git. </p>
                     </div>
                     <div className="inicio-middle_conocimientos_eng">
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                        <p>During this year I have been acquiring knowledge of various technologies, both layout and frontend programming. I started with HTML5 and CSS3 to later complement it with Bootsrap and SASS. Then I started to learn more about Javascript (ES6) and some frameworks like Angular 10+ and React. I also have experience in responsive web development, as well as Firebase and Git.</p>
                     </div>
                 </div>
             </div>
@@ -38,17 +38,17 @@ export const InicioWeb = () => {
                     <h2>Proyectos</h2>
                 </div>
                 <div className="inicio-bottom_images">
-                    <a href="" className="inicio-bottom_images_uno">
-                        <img className="images" src="images/heroes.png"></img>
+                    <a href="https://heroes-react-app.web.app/login" className="inicio-bottom_images_uno">
+                        <img className="images" src="images/heroes.png" alt="heroes"></img>
                     </a>
-                    <a href="" className="inicio-bottom_images_dos">
-                        <img className="images" src="images/gif.png"></img>
+                    <a href="https://gif-react-app.web.app/" className="inicio-bottom_images_dos">
+                        <img className="images" src="images/gif.png" alt="gif"></img>
                     </a>
-                    <a href="" className="inicio-bottom_images_tres">
-                        <img className="images" src="images/peliculas.png"></img>
+                    <a href="https://peliculasapp-crod.web.app/home" className="inicio-bottom_images_tres">
+                        <img className="images" src="images/peliculas.png" alt="peliculas"></img>
                     </a>
-                    <a href="" className="inicio-bottom_images_cuatro">
-                        <img className="images" src="images/youtube.png"></img>
+                    <a href="https://you-tube-crod.web.app" className="inicio-bottom_images_cuatro">
+                        <img className="images" src="images/youtube.png" alt="youtube"></img>
                     </a>
                 </div>
             </div>
