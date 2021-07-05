@@ -1,6 +1,17 @@
+@import "abstract/mixins";
+@import "abstract/variables";
+
 html, body {
     color: black;
     background-color: lighten($color: #ffeeb8, $amount: 3);
+}
+
+p{
+    font-size: size(sm);
+
+    @include responsive(xl){
+        font-size: size(sm)-.1;
+    }
 }
 
 .container{
@@ -17,16 +28,56 @@ html, body {
     text-align: center;
     border-bottom: 1px solid;
 
+    @include responsive(md){
+        grid-column: 1 / 7;
+        margin-top: 50px;
+    }
+
     &_img{
         width: 300px;
+
+        @include responsive(xl){
+            width: 250px;
+        }
+
+        @include responsive(md){
+            width: 200px;
+        }
     }
 
     &_titulo{
         margin-top: 30px;
+        font-size: size(xl);
+
+        @include responsive(xl){
+            font-size: size(xl)-1;
+        }
+
+        @include responsive(md){
+            font-size: size(lg);
+        }
+
+        @include responsive(sm){
+            font-size: size(md);
+        }
     }
 
     &_subtitulo{
         margin-bottom: 30px;
+        font-size: size(md);
+
+        @include responsive(xl){
+            font-size: size(md)-.05;
+        }
+
+        @include responsive(md){
+            font-size: size(md)-.1;
+            margin-bottom: 25px;
+        }
+
+        @include responsive(sm){
+            font-size: size(sm)+.1;
+        }
     }
 
     &_button{
@@ -37,6 +88,19 @@ html, body {
             text-decoration: none;
             color: lighten($color: #ffeeb8, $amount: 3);
             transition: .3s;
+            font-size: size(sm);
+
+            @include responsive(xl){
+                font-size: size(sm)-.1;
+            }
+
+            @include responsive(md){
+                font-size: size(sm)-.2;
+            }
+
+            @include responsive(sm){
+                font-size: size(sm)-.3;
+            }
 
             &:hover{
                 text-decoration: none;
@@ -61,16 +125,29 @@ html, body {
         text-align: justify;
         padding:10px;
 
+        @include responsive(md){
+            flex-direction: column;
+            border-bottom: 1px solid;
+        }
+
         &_es{
             padding-right: 40px;
             flex: 1;
 
+            @include responsive(md){
+                padding-right: 0;
+            }
         }
 
         &_eng{
             border-left: 1px solid;
             padding-left: 40px;
             flex: 1;
+
+            @include responsive(md){
+                border-left: none;
+                padding-left: 0;
+            }
         }
     }
 
@@ -80,15 +157,29 @@ html, body {
         text-align: justify;
         padding:10px;
 
+        @include responsive(md){
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
         &_es{
             padding-right: 40px;
             flex: 1;
+
+            @include responsive(md){
+                padding-right: 0;
+            }
         }
 
         &_eng{
             border-left: 1px solid;
             padding-left: 40px;
             flex: 1;
+
+            @include responsive(md){
+                border-left: none;
+                padding: 0;
+            }
         }
     }
 }
@@ -105,6 +196,14 @@ html, body {
     &_title{
         text-align: center;
         padding-top: 10px;
+        
+        h2{
+            font-size: size(lg);
+
+            @include responsive(xl){
+                font-size: size(md)-.05;
+            }
+        }
     }
 
     &_images{
@@ -117,6 +216,11 @@ html, body {
         display: grid;
         grid-template-columns: repeat(4, minmax(min-content,1fr));
 
+        @include responsive(md){
+            grid-template-columns: none;
+            flex-direction: column;
+        }
+
 
         &_uno{
             grid-column: 1 / 2;
@@ -127,6 +231,15 @@ html, body {
                 transform: scale(1.3);
                 z-index: 1;
                 opacity: 1;
+
+                @include responsive(xl){
+                    transform: scale(1.1);
+                }
+            }
+
+            @include responsive(md){
+                grid-column: none;
+                margin-bottom: 20px;
             }
 
         }
@@ -140,6 +253,15 @@ html, body {
                 transform: scale(1.3);
                 z-index: 1;
                 opacity: 1;
+
+                @include responsive(xl){
+                    transform: scale(1.1);
+                }
+            }
+
+            @include responsive(md){
+                grid-column: none;
+                margin-bottom: 20px;
             }
 
         }
@@ -153,6 +275,15 @@ html, body {
                 transform: scale(1.3);
                 z-index: 1;
                 opacity: 1;
+
+                @include responsive(xl){
+                    transform: scale(1.1);
+                }
+            }
+
+            @include responsive(md){
+                grid-column: none;
+                margin-bottom: 20px;
             }
 
         }
@@ -166,6 +297,14 @@ html, body {
                 transform: scale(1.3);
                 z-index: 1;
                 opacity: 1;
+
+                @include responsive(xl){
+                    transform: scale(1.1);
+                }
+            }
+
+            @include responsive(md){
+                grid-column: none;
             }
 
         }
@@ -176,6 +315,22 @@ html, body {
     width: 200px;
     height: 150px;
     border-radius: 10px;
+
+    @include responsive(xl){
+        width: 150px;
+        height: 100px;
+    }
+
+    @include responsive(md){
+        width: 200px;
+        height: 150px;
+    }
+
+    @include responsive(sm){
+        width: 150px;
+        height: 100px;
+    }
+
 }
 
 .info{
@@ -188,9 +343,31 @@ html, body {
     grid-template-columns: repeat(2, minmax(min-content,1fr));
     margin-bottom: 20px;
 
+    @include responsive(lg){
+        grid-template-columns: none;
+    }
+
+    @include responsive(md){
+        display: flex;
+        flex-direction: column;
+        grid-column: 1 / 7;
+    }
+
     &_izq{
 
         padding-right: 40px;
+
+        @include responsive(xl){
+            padding-right: 20px;
+        }
+
+        h4{
+            font-size: size(md);
+
+            @include responsive(xl){
+                font-size: size(md)-.05;
+            }
+        }
 
         ul{
             list-style-type: square;
@@ -205,6 +382,10 @@ html, body {
             color: black;
             justify-content: right;
 
+            @include responsive(xl){
+                font-size: size(sm)-.1;
+            }
+
             &:hover{
                 text-decoration: underline;
             }
@@ -214,6 +395,22 @@ html, body {
     &_drcha{
 
         padding-left: 40px;
+
+        @include responsive(xl){
+            padding-left: 20px;
+        }
+
+        @include responsive(lg){
+            padding-left: 0;
+        }
+
+        h4{
+            font-size: size(md);
+
+            @include responsive(xl){
+                font-size: size(md)-.05;
+            }
+        }
 
         ul{
             list-style-type: square;
@@ -227,6 +424,10 @@ html, body {
         a{
             text-decoration: none;
             color: black;
+
+            @include responsive(xl){
+                font-size: size(sm)-.1;
+            }
 
             &:hover{
                 text-decoration: underline;
